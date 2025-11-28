@@ -17,11 +17,11 @@
         }
 
         body {
-            background-color: #ffffff; /* Ağ fon (qeyd etdiyiniz kimi) */
+            background-color: #ffffff;
             color: #333;
         }
 
-        /* --- Header (Başlıq) --- */
+        /* --- Header --- */
         header {
             display: flex;
             justify_content: space-between;
@@ -52,7 +52,7 @@
             background-color: #333;
         }
 
-        /* --- İdarəetmə Paneli (Action Bar) --- */
+        /* --- İdarəetmə Paneli --- */
         .action-bar {
             display: flex;
             justify-content: space-between;
@@ -67,15 +67,14 @@
             gap: 15px;
         }
 
-        /* --- ✅ SİZİN İSTƏDİYİNİZ DÜZƏLİŞ: CHECKBOX --- */
+        /* --- Checkbox Stili --- */
         .bulk-select-checkbox {
             width: 20px;
             height: 20px;
             cursor: pointer;
-            /* Ağ fonda görünməsi üçün qara kölgə və çərçivə */
             box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4); 
             border: 2px solid #000 !important;
-            accent-color: #000; /* Seçiləndə qara olsun */
+            accent-color: #000;
         }
 
         .action-buttons {
@@ -95,13 +94,13 @@
             background-color: #2ecc71;
             color: white;
         }
-
+        
         .btn-buy {
             background-color: #3498db;
             color: white;
         }
 
-        /* --- NFT Grid (Kartlar sahəsi) --- */
+        /* --- NFT Grid --- */
         #nft-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -109,7 +108,6 @@
             padding: 20px 40px;
         }
 
-        /* Nümunə NFT Kart Dizaynı (JavaScript ilə yaradılacaq) */
         .nft-card {
             border: 1px solid #e5e5e5;
             border-radius: 12px;
@@ -145,19 +143,18 @@
             color: #666;
         }
 
-        /* Kartın üstündəki seçim qutusu üçün */
+        /* Kartın üstündəki checkbox */
         .card-checkbox {
             position: absolute;
             top: 10px;
             right: 10px;
             width: 20px;
             height: 20px;
-            box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5); /* Eyni kölgə burada da var */
+            box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5);
             cursor: pointer;
             z-index: 10;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 40px;
@@ -181,7 +178,6 @@
 
         <div class="action-buttons">
             <button id="list-btn" class="btn btn-list">Listələ (Satışa Qoy)</button>
-            <button id="buy-btn" class="btn btn-buy">Satın Al</button>
         </div>
     </section>
 
@@ -192,9 +188,7 @@
         &copy; 2025 ApeChain Marketplace. Seaport Protocol Powered.
     </footer>
 
-    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
-    
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 
 </body>
 </html>
